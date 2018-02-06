@@ -8,7 +8,7 @@ export default function manageBand(state = {
       const band = Object.assign({}, action.band, {id:id})
       return { bands: state.bands.concat(band) }
     case 'DELETE_BAND':
-      return { bands: state.bands.filter(band => band.id !== action.band.id)}
+      return { bands: state.bands.filter(band => band.id !== action.id)}
     default:
       return state;
   }
