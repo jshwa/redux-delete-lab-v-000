@@ -4,8 +4,8 @@ export default function manageBand(state = {
 }, action) {
   switch (action.type) {
     case 'ADD_BAND':
-      i++;
-      state.id = i
+      id++;
+      state.id = id
       return { bands: state.bands.concat(action.band) }
     case 'DELETE_BAND':
       return { bands: state.bands.filter(band => band.id !== action.band.id)}
