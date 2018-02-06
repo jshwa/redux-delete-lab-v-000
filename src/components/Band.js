@@ -8,7 +8,7 @@ class Band extends Component {
       id: this.props.band.id
     })
   }
-  
+
   render() {
     return(
       <div>

@@ -5,7 +5,7 @@ class Bands extends Component {
   render() {
     return(
       <ul>
-        {this.props.store.getState().bands.map(band => <Band band={band} key={band.id} id={band.id} store={this.props.store}/>)}
+        {this.props.store.getState().bands.map(band => <Band band={band.text} key={band.id} id={band.id} store={this.props.store}/>)}
       </ul>
     );
   }
