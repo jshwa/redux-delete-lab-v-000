@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Band from './band'
+import Band from './Band'
 
 class Bands extends Component {
   render() {
