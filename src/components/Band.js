@@ -4,7 +4,7 @@ class Band extends Component {
   render() {
     return(
       <div>
-        <li>{this.props.band}</li>
+        <li>{this.props.band.text}</li>
       </div>
     );
   }
