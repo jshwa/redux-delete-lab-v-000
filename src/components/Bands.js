@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Band from './band'
 
 class Bands extends Component {
   render() {
     return(
       <ul>
-        Bands Component
+        {this.props.store.band.map(band => <band band={band}/>)}
       </ul>
     );
   }
